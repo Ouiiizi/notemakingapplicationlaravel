@@ -14,7 +14,7 @@
         <h2>Dashboard</h2>
         <nav>
             <ul>
-                <li><a href="/notes">Notes</a></li>
+                <li><a href="/notes">View Notes</a></li>
                 <li>
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
