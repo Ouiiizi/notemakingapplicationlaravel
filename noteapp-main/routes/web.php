@@ -19,7 +19,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('notes', NoteController::class)
-    // ->only(['index', 'store'])
     ->only(['index', 'store', 'edit', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
 

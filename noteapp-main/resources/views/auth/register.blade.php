@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Laravel Note App</title>
-   <link rel="stylesheet" href = {{ asset('build/css/styles.css') }}
+   <link rel="stylesheet" href = {{ asset('build/css/form.css') }}
 </head>
 <body>
-    <div class="form-container">
+    <div class="input-group">
         <h1>Register</h1>
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <!-- Name -->
+            
             <div class="form-group">
                 <label for="name">Name</label>
                 <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus>
@@ -21,7 +21,7 @@
                 @endif
             </div>
 
-            <!-- Email -->
+            
             <div class="form-group">
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" value="{{ old('email') }}" required>
@@ -30,7 +30,7 @@
                 @endif
             </div>
 
-            <!-- Password -->
+            
             <div class="form-group">
                 <label for="password">Password</label>
                 <input id="password" type="password" name="password" required>
@@ -39,7 +39,7 @@
                 @endif
             </div>
 
-            <!-- Confirm Password -->
+            
             <div class="form-group">
                 <label for="password_confirmation">Confirm Password</label>
                 <input id="password_confirmation" type="password" name="password_confirmation" required>

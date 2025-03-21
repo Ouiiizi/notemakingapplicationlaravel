@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Laravel App</title>
-    <!-- Link to Custom CSS -->
+    
     <link rel="stylesheet" href="{{ asset('build/css/dash.css') }}">
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="container">
             <h2>Dashboard</h2>
@@ -26,7 +26,7 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+   
     <div class="main-content">
         <div class="container">
             <div class="card">

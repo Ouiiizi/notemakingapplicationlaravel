@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel Note App</title>
-    <!-- Fonts -->
+    
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    <!-- External CSS -->
+    
     <link rel="stylesheet" href="{{ asset('build/css/dsb.css') }}">
 </head>
 <body>
-    <!-- Navbar -->
+   
     <nav class="navbar">
         @if (Route::has('login'))
             @auth
@@ -25,10 +25,10 @@
         @endif
     </nav>
 
-    <!-- Main Content -->
+    
     <div class="container">
-        <h1>Welcome to the Laravel Note App</h1>
-        <p>This is a simple note-taking application built with Laravel.</p>
+    <center> <h1>Welcome to the Laravel Note App</h1> </center>
+        <p>.</p>
     </div>
 </body>
 </html>
