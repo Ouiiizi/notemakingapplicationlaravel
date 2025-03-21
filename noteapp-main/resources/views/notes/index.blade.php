@@ -22,7 +22,7 @@
                 </div>
             @endif
 
-            <button type="submit">Add Note</button>
+            <button type="submit" id="confirmNoteBtn">Add Note</button>
         </form>
     </div>
 
