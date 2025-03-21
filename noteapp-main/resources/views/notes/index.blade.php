@@ -3,23 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes - Laravel App</title>
+    <title>Notes</title>
+    
     <link rel="stylesheet" href="{{ asset('build/css/notes.css') }}">
 </head>
 <body>
-<!-- Navbar with Logout Button -->
-<nav class="navbar">
-    <div class="container">
-        <h2>Notetaking App</h2>
-        <form action="{{ route('logout') }}" method="POST">
-            @csrf
-            <button type="submit" class="logout-btn">Logout</button>
-        </form>
-    </div>
-</nav>
-
-<!-- Main Content -->
 <div class="container">
+
     <button class="add-note-btn" id="addNoteBtn">+ Add New Note</button>
 
     <div class="note-form" id="noteForm" style="display: none;">
@@ -33,7 +23,7 @@
                 </div>
             @endif
 
-            <button type="submit" id="confirmNoteBtn">Add Note</button>
+            <button type="submit">Add Note</button>
         </form>
     </div>
 
@@ -52,7 +42,9 @@
                     </div>
                     @if ($note->user->is(auth()->user()))
                         <div class="note-actions">
+                            <!-- Edit Button -->
                             <a href="{{ route('notes.edit', $note) }}" class="edit-btn">Edit</a>
+                            <!-- Delete Button -->
                             <form method="POST" action="{{ route('notes.destroy', $note) }}" class="delete-form">
                                 @csrf
                                 @method('delete')
@@ -66,6 +58,7 @@
         @endforeach
     </div>
 </div>
+
 
 <script>
     document.getElementById('addNoteBtn').addEventListener('click', function() {

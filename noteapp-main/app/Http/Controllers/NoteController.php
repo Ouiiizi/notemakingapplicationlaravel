@@ -28,7 +28,7 @@ class NoteController extends Controller
 
     public function edit(Note $note): View
     {
-        //
+        
         Gate::authorize('update', $note);
 
         return view('notes.edit', [
@@ -89,7 +89,7 @@ class NoteController extends Controller
      */
     public function destroy(Note $note): RedirectResponse
     {
-        //
+        
         Gate::authorize('delete', $note);
 
         $note->delete();

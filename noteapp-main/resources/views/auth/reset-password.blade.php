@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password - Laravel Note App</title>
-    <!-- Link to External CSS -->
     <link rel="stylesheet" href="{{ asset('build/css/form.css') }}">
 </head>
 <body>
